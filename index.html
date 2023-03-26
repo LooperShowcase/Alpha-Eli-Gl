@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body style="background-color: rgb(134, 12, 12)">
+    <ul class="nav">
+      <li class="bar"><a href="index.html">Home</a></li>
+      <li class="bar"><a href="index2.html">iphone </a></li>
+      <li>
+        <a href="index3.html"
+          ><button type="button" class="btn btn-outline-warning">
+            Contact
+          </button></a
+        >
+      </li>
+    </ul>
+
+    <h1>Apple</h1>
+    <p>
+      Apple Inc.'s world corporate headquarters are located in Cupertino, in the
+      middle of California's Silicon Valley, at Apple Park <br />, a massive
+      circular groundscraper building with a circumference of one mile <br />
+      (1.6 km). The building opened in April 2017 and houses more than 12,000
+      employees. Apple co-founder Steve Jobs wanted Apple Park <br />
+      to look less like a business park and more like a nature refuge <br />,
+      and personally appeared before the Cupertino City Council in June 2011 to
+      make the proposal, in his final public appearance before <br />
+      his death.
+    </p>
+    <img
+      src="https://media.cnn.com/api/v1/images/stellar/prod/111006055359-apple-logo-new-york.jpg?q=w_3000,h_2000,x_0,y_0,c_fill"
+      width="50%"
+    />
+    <br />
+    <a href="https://www.apple.com/il/"> apple</a>
+
+    <input type="color" id="colorpiker" onchange="bgchange()" />
+
+    <ul id="list">
+      <li>iPhone</li>
+      <li>macbook</li>
+    </ul>
+
+    <input type="text" id="textfield" />
+    <button onclick="add()">add</button>
+
+    <script>
+      function bgchange() {
+        var rgbvalue = document.getElementById("colorpiker").value;
+        document.body.style.background = rgbvalue;
+      }
+
+      function add() {
+        var ul = document.getElementById("list");
+        var li = document.createElement("li");
+
+        li.appendChild(
+          document.createTextNode(document.getElementById("textfield").value)
+        );
+        ul.appendChild(li);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
